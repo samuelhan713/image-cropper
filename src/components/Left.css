@@ -1,0 +1,7 @@
+.leftComp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    width: 100%;
+}

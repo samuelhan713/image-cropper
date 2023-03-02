@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import { usePython } from 'react-py';
+import Main from './components/Main';
+import Left from './components/Left';
+import RightTop from './components/RightTop';
+import RightMiddle from './components/RightMiddle';
+import RightBottom from './components/RightBottom';
+
 
 function App() {
+  const [input, setInput] = useState('')
+
+  // Use the usePython hook to run code and access both stdout and stderr
+  const { runPython, stdout, stderr, isLoading, isRunning } = usePython()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Main />
+    </>
+  )
 }
 
 export default App;

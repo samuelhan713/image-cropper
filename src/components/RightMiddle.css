@@ -1,0 +1,28 @@
+.rightMiddle {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    height: 100%;
+    flex: 0.1;
+    margin: 0 10px 10px 0;
+}
+
+.rightMiddle-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 10px;
+    flex: 0.4;
+    border-radius: 5px;
+}
+
+.rightMiddle-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: 10px;
+    flex: 1;
+    border-radius: 5px;
+}
